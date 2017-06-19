@@ -2,11 +2,25 @@ package MODEL;
 
 public class ShopModel 
 {
+	private String shopnum;
 	private String shopid;
 	private String shopname;
 	private String shopinprice;
 	private String shopoutprice;
-	private String shopnum;
+	public ShopModel(String shopnum, String shopid, String shopname, String shopinprice, String shopoutprice) {
+		super();
+		this.shopnum = shopnum;
+		this.shopid = shopid;
+		this.shopname = shopname;
+		this.shopinprice = shopinprice;
+		this.shopoutprice = shopoutprice;
+	}
+	public String getShopnum() {
+		return shopnum;
+	}
+	public void setShopnum(String shopnum) {
+		this.shopnum = shopnum;
+	}
 	public String getShopid() {
 		return shopid;
 	}
@@ -31,20 +45,7 @@ public class ShopModel
 	public void setShopoutprice(String shopoutprice) {
 		this.shopoutprice = shopoutprice;
 	}
-	public String getShopnum() {
-		return shopnum;
-	}
-	public void setShopnum(String shopnum) {
-		this.shopnum = shopnum;
-	}
-	public ShopModel(String shopid, String shopname, String shopinprice, String shopoutprice, String shopnum) {
-		super();
-		this.shopid = shopid;
-		this.shopname = shopname;
-		this.shopinprice = shopinprice;
-		this.shopoutprice = shopoutprice;
-		this.shopnum = shopnum;
-	}
+	
 	
 
 }

@@ -14,7 +14,7 @@ public class DatabaseLink
 		try 
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://119.28.59.127:3306/shopsystem", "admin", "fanliyong8880+");
+			con=DriverManager.getConnection("jdbc:mysql://119.28.59.127:3306/shopsystem", "admin", "heheda");
 			System.out.println("link ok");
 		} 
 		catch (Exception e) 

@@ -98,6 +98,23 @@ public class StartApp extends JFrame {
 		});
 
 		mnNewMenu.add(mntmNewMenuItem_2);
+		
+		JMenu mnNewMenu_1 = new JMenu("\u9500\u552E\u7BA1\u7406");
+		menuBar.add(mnNewMenu_1);
+		
+		JMenuItem menuItem_1 = new JMenuItem("\u8BA2\u5355\u603B\u8868\u7BA1\u7406");
+		menuItem_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				MainOrderManage mainOrderManage=new MainOrderManage();
+				mainOrderManage.setModal(true);
+				mainOrderManage.setVisible(true);
+			}
+		});
+		mnNewMenu_1.add(menuItem_1);
+		
+		JMenuItem mntmNewMenuItem_3 = new JMenuItem("\u8BA2\u5355\u660E\u7EC6\u8868");
+		mnNewMenu_1.add(mntmNewMenuItem_3);
 		//setExtendedState(MAXIMIZED_BOTH);×î´ó»¯
 	}
 }
