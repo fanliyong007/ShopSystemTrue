@@ -114,6 +114,14 @@ public class StartApp extends JFrame {
 		mnNewMenu_1.add(menuItem_1);
 		
 		JMenuItem mntmNewMenuItem_3 = new JMenuItem("\u8BA2\u5355\u660E\u7EC6\u8868");
+		mntmNewMenuItem_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0)
+			{
+				DetailOrderManage detailordermanage=new DetailOrderManage();
+				detailordermanage.setModal(true);
+				detailordermanage.setVisible(true);
+			}
+		});
 		mnNewMenu_1.add(mntmNewMenuItem_3);
 		//setExtendedState(MAXIMIZED_BOTH);×î´ó»¯
 	}
